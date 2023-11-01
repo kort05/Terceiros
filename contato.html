@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <title>GramadoTur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="logo.png" alt=""></a>
+      <nav class="menu-mobile">
+        <img id="menu-img" src="menu.png" alt="Três barras brancas posicionadas horizontalmente que funcionam como botão de acesso ao menu">
+        <ul>
+          <li><a href="index.html"> Página Inicial </a></li>
+          <li><a href="pturistico.html"> Pontos Turísticos </a></li>
+          <li><a href="clima.html"> Clima em Gramado </a></li>
+          <li><a href="chegar.html"> Como chegar em Gramado? </a></li>
+          <li><a href="contato.html"> Contato </a></li>
+        </ul>
+      </nav>
+    </header>
+      <nav class="menu-desktop">
+        <ul>
+          <li><a href="index.html"> Página Inicial </a></li>
+          <li><a href="pturistico.html"> Pontos Turísticos </a></li>
+          <li><a href="clima.html"> Clima em Gramado </a></li>
+          <li><a href="chegar.html"> Como chegar em Gramado? </a></li>
+          <li><a href="contato.html"> Contato </a></li>
+        </ul>
+      </nav>
+
+      <section id="formulario">
+        <div class="container">
+          <legend>Informe seus dados a seguir:</legend>
+          <form>
+            <div>
+              <input placeholder="Nome" type="text" name="nome" class="form w100" />
+            </div>
+
+            <div>
+              <input placeholder="Telefone" type="number" name="telefone" class="form w100" />
+            </div>
+
+            <div>
+              <input placeholder="E-mail" type="email" name="email" class="form w100" />
+            </div>
+
+            <div>
+              <input placeholder="Cidade" type="text" name="cidade" class="form w100" />
+            </div>
+
+            <div>
+              <input placeholder="Estado" type="text" name="estado" class="form w100" />
+            </div>
+
+            <div>
+              <textarea placeholder="Mensagem" name="Mensagem" id="mensagem"> </textarea>
+            </div>
+
+            <div class="bot">
+              <button type="submit">Enviar</button>
+              <button type="reset">Limpar</button>
+            </div>
+            <div class="clear"></div>
+          </form>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-all"> 
+          <img src="logo.png" alt=""> 
+          <p>Gramado, no sul do Brasil, é uma encantadora cidade serrana conhecida por sua arquitetura europeia, clima frio e belas paisagens.</p>
+          <p> Com festivais encantadores, culinária requintada e um ambiente acolhedor, é um destino popular para os amantes da natureza e da cultura.</p>
+          <a href="@gramadooficia">@gramadooficia</a>
+        </div>
+      </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+        $('.menu-mobile img').click(function(){
+            $('.menu-mobile ul').slideToggle();
+        });
+    </script>
+  </body>
+</html>
